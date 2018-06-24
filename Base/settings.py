@@ -112,6 +112,7 @@ MEDIA_URL = '/media/'
 AUTH_USER_MODEL = 'usuarios.User'
 STATIC_URL = '/static/'
 LOGIN_URL = '/login'
+STATIC_ROOT = 'staticfiles'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 LOGIN_REDIRECT_URL = reverse_lazy('/admin')
