@@ -107,8 +107,8 @@ USE_TZ = True
 #AUTH_USER_MODEL = 'empleado.User'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-MEDIA_ROOT = '/Users/manue/Desktop/Proj/Real/'
-MEDIA_URL = '/media/'
+#MEDIA_ROOT = '/Users/manue/Desktop/Proj/Real/'
+#MEDIA_URL = '/media/'
 AUTH_USER_MODEL = 'usuarios.User'
 STATIC_URL = '/static/'
 LOGIN_URL = '/login'
