@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'Base.wsgi.application'
 # CONEXIÓN A BASE DE DATOS
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'djangogirls',
@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'Base.wsgi.application'
         'HOST': 'localhost',
         'PORT': ''
     }
-}"""
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -124,4 +124,4 @@ LOGIN_REDIRECT_URL = reverse_lazy('/admin')
 db_from_env = dj_database_url.config(conn_max_age=500)  
 DATABASES['default'].update(db_from_env)"""
 import dj_database_url
-DATABASES = {default': dj_database_url.config()}
+DATABASES = {'default': dj_database_url.config()}
