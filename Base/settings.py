@@ -120,6 +120,8 @@ STATIC_ROOT = 'staticfiles'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 LOGIN_REDIRECT_URL = reverse_lazy('/admin')
-import dj_database_url  
+"""import dj_database_url  
 db_from_env = dj_database_url.config(conn_max_age=500)  
-DATABASES['default'].update(db_from_env)  
+DATABASES['default'].update(db_from_env)"""
+import dj_database_url
+DATABASES = {default': dj_database_url.config()}
